@@ -11,8 +11,42 @@
   [plugins] = "options.plugins" (eventClick) = "eventClick($event)"
   [columnHeaderHtml] = "options.columnHeaderHtml"></full-calendar>
 </div> -->
-<div>
-  <full-calendar [options]="calendarOptions"></full-calendar>
+<div class="cal-container" fxLayoutAlign="center center" fxFlexFill fxLayoutGap="20px">
+  <mat-card>
+    <full-calendar [options]="calendarOptions" class="cal"></full-calendar>
+  </mat-card>
+  <mat-card>
+    <div class="cal-years" fxLayoutAlign="center center" fxLayout="column">      
+      <button mat-button>2021</button>
+      <button mat-button>2022</button>
+      <button mat-button>2023</button>
+      <button mat-button>2024</button>
+      <button mat-button>2025</button>
+      <button mat-button>2026</button>
+      <button mat-button>2027</button>
+      <button mat-button>2028</button>
+      <button mat-button>2029</button>
+      <button mat-button>2030</button>
+      <button mat-button>2031</button>
+      <button mat-button>2032</button>
+    </div>
+  </mat-card>
+  <mat-card>
+    <div class="cal-months" fxLayoutAlign="center center" fxLayout="column">
+      <button mat-button color="primary">January</button>
+      <button mat-button>February</button>
+      <button mat-button>March</button>
+      <button mat-button>April</button>
+      <button mat-button>May</button>
+      <button mat-button>June</button>
+      <button mat-button>July</button>
+      <button mat-button>August</button>
+      <button mat-button>September</button>
+      <button mat-button>October</button>
+      <button mat-button>November</button>
+      <button mat-button>December</button>
+    </div>
+  </mat-card>
 </div>
 
 <router-outlet></router-outlet>

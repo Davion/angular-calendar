@@ -1,2 +1,28 @@
 // @import '~@fullcalendar/core/main.css';
 @import '~@fullcalendar/daygrid/main.css';
+
+.cal-container{
+    background-color: #f8f8fa;
+}
+.cal{
+    width: 300px;
+    height: 500px;
+}
+
+mat-card{
+    border-radius: 10px;
+}
+
+.cal-years{
+    width: 100px;
+    height: 500px;
+}
+
+.cal-months{
+    width: 100px;
+    height: 500px;
+}
+
+button{
+    padding: 0.27rem;
+}
