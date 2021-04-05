@@ -11,7 +11,12 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 export class AppComponent {
   
   calendarOptions: CalendarOptions = {
-    initialView: 'dayGridMonth'
+    initialView: 'dayGridMonth',
+    weekends: false,
+    events:[
+      { title: 'event 1', date: '2021-04-01' },
+      { title: 'event 2', date: '2021-04-02' }
+    ]
   };
   
   // @ViewChild('fullcalendar', null) calendarComponent: FullCalendarComponent;
@@ -47,9 +52,9 @@ export class AppComponent {
   //     end: '2020-10'
   //   }];
   // }
-  // toggleWeekends(){
-  //   this.calendarWeekends = !this.calendarWeekends;
-  // }
+  toggleWeekends(){
+    this.calendarOptions.weekends = !this.calendarOptions.weekends;
+  }
   // eventClick(model){}
   // dateClick(model){}
   // eventDragStop(model){}

@@ -14,6 +14,7 @@
 <div class="cal-container" fxLayoutAlign="center center" fxFlexFill fxLayoutGap="20px">
   <mat-card>
     <full-calendar [options]="calendarOptions" class="cal"></full-calendar>
+    <button mat-raised-button color="primary" (click)="toggleWeekends()">Weekends</button>
   </mat-card>
   <mat-card>
     <div class="cal-years" fxLayoutAlign="center center" fxLayout="column">      
